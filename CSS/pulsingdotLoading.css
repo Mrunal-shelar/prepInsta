@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+.loader {
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(105, 175, 251);
+    border-radius: 50%;
+    animation: pulse 1s infinite ease-in-out;
+}
+
+ #dot2{
+    animation-delay: 0.2s ;
+
+}
+ 
+#dot3{
+    animation-delay:0.4s ;
+
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}

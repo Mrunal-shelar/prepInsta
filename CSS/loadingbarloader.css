@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    margin: 0;
+}
+
+.loader-container {
+    width: 30%;
+    /* max-width: 400px; */
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.loader {
+    height: 100%;
+    width: 0;
+    background-color: #3498db;
+    animation: load 3s infinite;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    } 
+}
